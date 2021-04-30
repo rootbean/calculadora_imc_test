@@ -11,14 +11,16 @@ include_once('conexion-bd.php');
  * @return string configuración de la conexión
  */
 function saveResultadosIMC($peso, $estatura) {
-    $result_bd = conexionBD();
-    $insert_datos = "INSERT INTO resultados_imc(peso, estatura) VALUES (?, ?)";
-    $result = $result_bd -> prepare($insert_datos);
-    $result -> execute(array($peso, $estatura));
-    
-    if (!$result_bd) {
-        throw new Exception('Error al guardar el registro.');
+    try {
+        $result_bd = conexionBD();
+        $insert_datos = "INSERT INTO resultados_imc(peso, estatura, id_usuario) VALUES (?, ?, ?)";
+        $result = $result_bd -> prepare($insert_datos);
+        $result -> execute(array($peso, $estatura, 3));
+    } catch (Exception $e) {
+        die('Error: '.$e->GetMessage());
+        // throw new Exception('Error al guardar el registro.');
     }
+
     echo 'El registro fue guardado';
 }
 

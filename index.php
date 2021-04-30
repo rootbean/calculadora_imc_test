@@ -31,7 +31,7 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <a class="nav-link text-white" href="#" tabindex="-1">Registrarse</a>
+                    <a class="nav-link text-white" href="registrar-usuario.php" tabindex="-1">Registrarse</a>
                     <a class="nav-link text-white" href="#" tabindex="-1">Iniciar Sesión</a>
                     <a class="nav-link text-white" href="#" tabindex="-1">Perfil</a>
                     <a class="nav-link text-white" href="#" tabindex="-1">Salir</a>

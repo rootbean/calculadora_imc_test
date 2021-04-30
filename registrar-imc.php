@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-1"></div>
                 <div class="col-4">
-                    <form action="calculadora_imc.php" method="POST">
+                    <form action="calculadora-imc.php" method="POST">
                         <div class="mb-3">
                             <label for="formEstatura" class="form-label">Estatura (Mts)</label>
                             <input type="number" step="0.01" name="estatura" class="form-control" id="formEstatura" placeholder="Estatura">
